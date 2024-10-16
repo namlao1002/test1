@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Field Monitoring &mdash; Operation Manual PDMS 08 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=0548be17"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="_static/custom.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Reporting and Dashboard" href="7_reporting.html" />
+    <link rel="prev" title="Desk-based Assessment of Deforestation" href="5_desk_assess.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Operation Manual PDMS
+              <img src="_static/logo_maf.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="2_overview.html">PDMS Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3_ui.html">PDMS User Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_start.html">Get Started with PDMS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5_desk_assess.html">Desk-based Assessment of Deforestation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Field Monitoring</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#preparations">Preparations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#set-up-mobile-device">Set Up Mobile Device</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#install-total-commander-from-google-play-store">Install Total Commander from Google Play Store</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#oruxmaps">Oruxmaps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#set-up-oruxmaps">Set Up OruxMaps</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#install-oruxmaps">Install OruxMaps</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#set-up-maps-and-satellite-images">Set Up Maps and Satellite Images</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#set-up-online-maps-and-satellite-images">Set Up Online Maps and Satellite Images</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#set-up-nicfi-monthly-planet-image">Set Up NICFI Monthly Planet Image</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#set-up-offline-maps">Set Up Offline Maps</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#set-up-kml-file-into-oruxmaps">Set Up KML file into Oruxmaps</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#navigate-to-deforestation-areas-oluxmap">Navigate to Deforestation Areas (Oluxmap)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#prepare-kmz-file-of-the-deforestation-area">Prepare KMZ file of the deforestation area</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#set-deforestation-areas-for-field-survey-via-whatsapp">Set Deforestation Areas for Field Survey (via WhatsApp)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#set-deforestation-areas-for-field-survey-via-gmail">Set Deforestation Areas for Field Survey (via Gmail)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Navigate to Deforestation Areas (Oluxmap)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#odk-collect">ODK Collect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#set-up-odk-collect">Set Up ODK Collect</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#install-odk-collect">Install ODK Collect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#manage-odk-collect-settings-picture-and-font">Manage ODK Collect Settings (Picture and Font)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#download-forms-from-a-sever">Download forms from a sever</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#use-odk-collect">Use ODK Collect</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#confirm-id-number-requested-by-pdms-operator">Confirm ID Number Requested by PDMS Operator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fill-out-forms">Fill out Forms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#measurement-of-deforestation-area">Measurement of Deforestation Area</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#geo-point-location-of-deforestation-area">Geo-point (Location) of Deforestation Area</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#picture-of-deforestation-area">Picture of Deforestation Area</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#forms-end-screen">Forms End Screen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#edit-drafts">Edit Drafts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#send-finalized-forms">Send Finalized Forms</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#pdms-web-application">PDMS Web Application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#final-review-of-the-result-of-field-survey">Final Review of the Result of Field Survey</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#delete-data">Delete Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="7_reporting.html">Reporting and Dashboard</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Operation Manual PDMS</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Field Monitoring</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/6_field_monitoring.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="field-monitoring">
+<h1>Field Monitoring<a class="headerlink" href="#field-monitoring" title="Link to this heading"></a></h1>
+<p>Once deforestation sites are identified by the PDMS web application, Field Officer will conduct forest monitoring activities by visiting the sites where deforestation has occurred, interviewing villagers to gather necessary information, and reporting the results of the field survey.
+To conduct field surveys efficiently, PDMS uses two applications. One is <strong>Oruxmaps</strong>, a map application that displays deforestation areas to facilitate access to the site, and the other is <strong>ODK Collect</strong>, a survey form application that simplifies data collection in the field. These applications should be installed on your mobile phone or tablet to carry out the field surveys.</p>
+<section id="preparations">
+<h2>Preparations<a class="headerlink" href="#preparations" title="Link to this heading"></a></h2>
+<section id="set-up-mobile-device">
+<h3>Set Up Mobile Device<a class="headerlink" href="#set-up-mobile-device" title="Link to this heading"></a></h3>
+<p>Applications used in these field surveys must not be downloaded from the Google Play Store, but rather from dedicated websites. To download application, certain configurations need to be completed in advance.</p>
+<ol class="arabic simple">
+<li><p>Make sure the Unknown Sources is checked. On the tablet, launch <code class="docutils literal notranslate"><span class="pre">Setting</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Lock</span> <span class="pre">screen</span> <span class="pre">and</span> <span class="pre">security</span></code>.</p></li>
+<li><p>Turn <code class="docutils literal notranslate"><span class="pre">Unknown</span> <span class="pre">sources</span></code> ON.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.1.1.1.png" src="_images/4.1.1.1.png" />
+</figure>
+<ol class="arabic simple" start="3">
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">Location</span> <span class="pre">Tags</span></code> in the camera settings and turn them <strong>ON</strong>. Refer to the image below, especially the highlighted red area, for guidance on enabling the location tags.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.1.1.2.png" src="_images/4.1.1.2.png" />
+</figure>
+</section>
+<section id="install-total-commander-from-google-play-store">
+<h3>Install Total Commander from Google Play Store<a class="headerlink" href="#install-total-commander-from-google-play-store" title="Link to this heading"></a></h3>
+<p>Total Commander is a powerful file management application for Android. It allows you to easily organize files on your device’s internal storage, SD card, and cloud storage. You can copy, move, delete, and rename files when you need to prepare the necessary dataset in your mobile device.</p>
+<ol class="arabic simple">
+<li><p>Access the Google Play Store and download Total Commander App</p></li>
+</ol>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<img alt="_images/4.1.1.3.png" src="_images/4.1.1.3.png" />
+</figure>
+</td>
+<td><figure class="align-default">
+<img alt="_images/4.1.1.4.png" src="_images/4.1.1.4.png" />
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="oruxmaps">
+<h2>Oruxmaps<a class="headerlink" href="#oruxmaps" title="Link to this heading"></a></h2>
+<p>Oruxmaps is a mapping application designed to support field surveys, particularly for forest monitoring. It displays specific locations of forest degradation and related geographic information, helping forest officers easily access these sites. Users can install Oruxmaps on their mobile phones or tablets, and it works offline, making it useful in areas without internet access. The app is an essential tool for verifying on-site forest conditions and conducting efficient field surveys based on location data.</p>
+</section>
+<section id="set-up-oruxmaps">
+<h2>Set Up OruxMaps<a class="headerlink" href="#set-up-oruxmaps" title="Link to this heading"></a></h2>
+<p>OruxMaps primarily uses online maps by default. However, if you visit a study location without internet access, you won’t be able to view maps and other information. To display maps and satellite images in areas without an internet connection, follow the steps below to set up offline map access.</p>
+<section id="install-oruxmaps">
+<h3>Install OruxMaps<a class="headerlink" href="#install-oruxmaps" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>Access the following URL through the browser.</p></li>
+</ol>
+<p><a class="reference external" href="https://nfms.dof.maf.gov.la/pdms/download.php">https://nfms.dof.maf.gov.la/pdms/download.php</a></p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/4.2.1.1.png"><img alt="_images/4.2.1.1.png" src="_images/4.2.1.1.png" style="width: 135.0px; height: 135.0px;" /></a>
+</figure>
+<ol class="arabic simple" start="2">
+<li><p>To download the OruxMaps application (OruxMaps 8.5.5), tap the red-framed area as shown below.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.2.1.2.png" src="_images/4.2.1.2.png" />
+</figure>
+<ol class="arabic simple" start="3">
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">DOWNLOAD</span></code></p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.2.1.3.png" src="_images/4.2.1.3.png" />
+</figure>
+<ol class="arabic simple" start="4">
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">OPEN</span> <span class="pre">FILE</span></code></p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.2.1.4.png" src="_images/4.2.1.4.png" />
+</figure>
+<figure class="align-default">
+<img alt="_images/4.2.1.5.png" src="_images/4.2.1.5.png" />
+</figure>
+<ol class="arabic simple" start="5">
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">INSTALL</span></code></p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.2.1.6.png" src="_images/4.2.1.6.png" />
+</figure>
+<ol class="arabic simple" start="6">
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">DONE</span></code>.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.2.1.7.png" src="_images/4.2.1.7.png" />
+</figure>
+<ol class="arabic simple" start="7">
+<li><p>Launch the <strong>OruxMaps</strong> application. Tap <code class="docutils literal notranslate"><span class="pre">ACCEPT</span></code></p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.2.1.8.png" src="_images/4.2.1.8.png" />
+</figure>
+<ol class="arabic simple" start="8">
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">OK</span></code></p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.2.1.9.png" src="_images/4.2.1.9.png" />
+</figure>
+<ol class="arabic simple" start="9">
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">ALLOW</span></code></p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.2.1.10.png" src="_images/4.2.1.10.png" />
+</figure>
+<ol class="arabic simple" start="10">
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">ACCEPT</span></code></p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.2.1.11.png" src="_images/4.2.1.11.png" />
+</figure>
+<ol class="arabic simple" start="11">
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">ACCEPT</span></code></p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.2.1.12.png" src="_images/4.2.1.12.png" />
+</figure>
+<ol class="arabic simple" start="12">
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">CANCEL</span></code></p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.2.1.13.png" src="_images/4.2.1.13.png" />
+</figure>
+<ol class="arabic simple" start="13">
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">CANCEL</span></code></p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.2.1.14.png" src="_images/4.2.1.14.png" />
+</figure>
+</section>
+<section id="set-up-maps-and-satellite-images">
+<h3>Set Up Maps and Satellite Images<a class="headerlink" href="#set-up-maps-and-satellite-images" title="Link to this heading"></a></h3>
+<section id="set-up-online-maps-and-satellite-images">
+<h4>Set Up Online Maps and Satellite Images<a class="headerlink" href="#set-up-online-maps-and-satellite-images" title="Link to this heading"></a></h4>
+<ol class="arabic simple">
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">Download</span> <span class="pre">oruxMaps/mapfiles</span></code> and download the mapfiles in the red box.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.2.2.1.1.png" src="_images/4.2.2.1.1.png" />
+</figure>
+<ol class="arabic simple" start="2">
+<li><p>The dialog shown below will appear, but you can ignore it. It will disappear automatically after a short time</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.2.2.1.2.png" src="_images/4.2.2.1.2.png" />
+</figure>
+<ol class="arabic simple" start="3">
+<li><p>Launch Total Commander on the tablet.</p></li>
+</ol>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/total_commander_icon.png"><img alt="_images/total_commander_icon.png" src="_images/total_commander_icon.png" style="width: 153.6px; height: 153.6px;" /></a>
+</figure>
+<p>(4)     You need to copy downloaded <strong>onlinemapsouces.xml</strong> into the mapfile folder of oruxmaps.
+1)      Tap <code class="docutils literal notranslate"><span class="pre">Internal</span> <span class="pre">shared</span> <span class="pre">storage</span></code>
+2)      Tap <code class="docutils literal notranslate"><span class="pre">Download</span></code>
+3)      Tap and hold onlinemapsouces.xml and select <code class="docutils literal notranslate"><span class="pre">Copy/Move/Send</span> <span class="pre">via</span> <span class="pre">Bluetooth</span></code> in the context menu.</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<img alt="_images/4.2.2.1.3.png" src="_images/4.2.2.1.3.png" />
+</figure>
+</td>
+<td><figure class="align-default">
+<img alt="_images/4.2.2.1.4.png" src="_images/4.2.2.1.4.png" />
+</figure>
+</td>
+<td><figure class="align-default">
+<img alt="_images/4.2.2.1.5.png" src="_images/4.2.2.1.5.png" />
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+<ol class="arabic simple" start="4">
+<li><p>Tap `` ``</p></li>
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">home</span></code></p></li>
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">Internal</span> <span class="pre">shared</span> <span class="pre">storage</span></code></p></li>
+</ol>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<img alt="_images/4.2.2.1.6.png" src="_images/4.2.2.1.6.png" />
+</figure>
+</td>
+<td><figure class="align-default">
+<img alt="_images/4.2.2.1.7.png" src="_images/4.2.2.1.7.png" />
+</figure>
+</td>
+<td><figure class="align-default">
+<img alt="_images/4.2.2.1.8.png" src="_images/4.2.2.1.8.png" />
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+<ol class="arabic simple" start="7">
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">oruxmaps</span></code></p></li>
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">mapfiles</span></code></p></li>
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p></li>
+<li><p>If the <cite>Target file exist!</cite> window appears, tap <code class="docutils literal notranslate"><span class="pre">OVERWRITE</span> <span class="pre">ALL</span></code> to finish the copy.</p></li>
+</ol>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<img alt="_images/4.2.2.1.9.png" src="_images/4.2.2.1.9.png" />
+</figure>
+</td>
+<td><figure class="align-default">
+<img alt="_images/4.2.2.1.10.png" src="_images/4.2.2.1.10.png" />
+</figure>
+</td>
+<td><figure class="align-default">
+<img alt="_images/4.2.2.1.11.png" src="_images/4.2.2.1.11.png" />
+</figure>
+</td>
+<td><figure class="align-default">
+<img alt="_images/4.2.2.1.12.png" src="_images/4.2.2.1.12.png" />
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+<p>(5)     Launch the OruxMaps application.
+1)      Tap the frame highlighted in blue at the top right of the screen
+2)      Tap <code class="docutils literal notranslate"><span class="pre">Switch</span> <span class="pre">map</span></code></p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<img alt="_images/4.2.2.1.13.png" src="_images/4.2.2.1.13.png" />
+</figure>
+</td>
+<td><figure class="align-default">
+<img alt="_images/4.2.2.1.14.png" src="_images/4.2.2.1.14.png" />
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+<ol class="arabic simple" start="3">
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">LAYERS</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">WORLD</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">GOOGLE</span> <span class="pre">MAPS</span> <span class="pre">HYBRID</span> <span class="pre">(ONLINE)</span></code></p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.2.2.1.15.png" src="_images/4.2.2.1.15.png" />
+</figure>
+</section>
+<section id="set-up-nicfi-monthly-planet-image">
+<h4>Set Up NICFI Monthly Planet Image<a class="headerlink" href="#set-up-nicfi-monthly-planet-image" title="Link to this heading"></a></h4>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The NICFI Satellite Data Program provides monthly mosaics of high-resolution satellite imagery to monitor the tropics for the primary purpose of reducing and reversing the loss of tropical forests, contributing to combating climate change, conserving biodiversity, contributing to forest regrowth, restoration and enhancement, and facilitating sustainable development, all of which must be Non-Commercial Use. For more information about the NICFI (Norway’s International Climate and Forest Initiative) Satellite Data Program and the data offered, please visit the Program’s website.</p>
+</div>
+<ol class="arabic simple">
+<li><p>Open the OruxMaps application.</p></li>
+<li><p>Tap icon in red frame for Switch map.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.2.2.2.1.png" src="_images/4.2.2.2.1.png" />
+</figure>
+<ol class="arabic simple" start="3">
+<li><p>Tap icon   for adding the imagery to the WMTS System.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.2.2.2.2.png" src="_images/4.2.2.2.2.png" />
+</figure>
+<ol class="arabic simple" start="4">
+<li><p>Tap icon  of <code class="docutils literal notranslate"><span class="pre">WMTS</span> <span class="pre">MAP</span> <span class="pre">(ONLINE):</span> <span class="pre">From</span> <span class="pre">a</span> <span class="pre">WMTS</span> <span class="pre">url</span> <span class="pre">maps</span> <span class="pre">catalog</span></code> for adding the information of imagery to the WMTS System.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.2.2.2.3.png" src="_images/4.2.2.2.3.png" />
+</figure>
+<ol class="arabic simple" start="5">
+<li><p>Copy the following API Key provided by the PDMS Administrator.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>API key Planet-NICFI for DoF Lao PDR: <a class="reference external" href="https://api.planet.com/basemaps/v1/mosaics/wmts?api_key=PLAKf5d3d44ec39342b6a399aeb9f0c1211a">https://api.planet.com/basemaps/v1/mosaics/wmts?api_key=PLAKf5d3d44ec39342b6a399aeb9f0c1211a</a></p>
+</div>
+<ol class="arabic simple" start="6">
+<li><p>Tap to check the <strong>https</strong> box and paste the API key to the <a class="reference external" href="https://">https://</a> and tap OK.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.2.2.2.4.png" src="_images/4.2.2.2.4.png" />
+</figure>
+<ol class="arabic simple" start="7">
+<li><p>Select the necessary imagery. To use the latest monthly high-resolution satellite image as background image of Oruxmaps, tap <code class="docutils literal notranslate"><span class="pre">Latest</span> <span class="pre">PS</span> <span class="pre">Tropical</span> <span class="pre">Normalized</span> <span class="pre">Analytic</span> <span class="pre">Monthly</span> <span class="pre">Monitoring</span></code> and tap OK.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.2.2.2.5.png" src="_images/4.2.2.2.5.png" />
+</figure>
+<ol class="arabic simple" start="8">
+<li><p>Put the name of the map (e.g. NICFI Planet Monthly) then click an icon   on the right-hand side.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.2.2.2.6.png" src="_images/4.2.2.2.6.png" />
+</figure>
+<ol class="arabic simple" start="9">
+<li><p>The Monthly NICFI Planet imagery will appear on the WMTS system and you can view them.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.2.2.2.7.png" src="_images/4.2.2.2.7.png" />
+</figure>
+</section>
+<section id="set-up-offline-maps">
+<h4>Set Up Offline Maps<a class="headerlink" href="#set-up-offline-maps" title="Link to this heading"></a></h4>
+<ol class="arabic simple">
+<li><p>Tap the area highlighted yellow frame at the top right of the screen.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.2.2.2.8.png" src="_images/4.2.2.2.8.png" />
+</figure>
+<ol class="arabic simple" start="2">
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">Map</span> <span class="pre">tools</span></code>.</p></li>
+</ol>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/4.2.2.2.9.png"><img alt="_images/4.2.2.2.9.png" src="_images/4.2.2.2.9.png" style="width: 329.7px; height: 585.3px;" /></a>
+</figure>
+<ol class="arabic simple" start="3">
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">Map</span> <span class="pre">creator</span></code>.</p></li>
+</ol>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/4.2.2.2.10.png"><img alt="_images/4.2.2.2.10.png" src="_images/4.2.2.2.10.png" style="width: 360.9px; height: 318.59999999999997px;" /></a>
+</figure>
+<ol class="arabic simple" start="4">
+<li><p>Touch the upper left corner of the position where you want to create an offline map. (For example, the position within the red frame.)</p></li>
+</ol>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/4.2.2.2.11.png"><img alt="_images/4.2.2.2.11.png" src="_images/4.2.2.2.11.png" style="width: 588.0px; height: 584.4px;" /></a>
+</figure>
+<p>(5)     Touch and move the bottom right-hand corner of the location where you want to create an offline map (e.g., the position within the red frame). The offline map will then be displayed within the rectangular area, as shown below.
+If you are satisfied with this range, tap the blue check icon at the bottom of the screen. If you want to adjust the range, tap the orange <code class="docutils literal notranslate"><span class="pre">-</span></code> icon. To redefine the range, tap the red <code class="docutils literal notranslate"><span class="pre">x</span></code>. After tapping the blue check icon, the following screen will appear.”</p>
+<figure class="align-default">
+<img alt="_images/4.2.2.2.12.png" src="_images/4.2.2.2.12.png" />
+</figure>
+<ol class="arabic simple" start="6">
+<li><p>Select all checkboxes from 0 to 19, as shown below. Enter a name for the offline map in the red frame so that it can be easily identified later. Since this is an offline map for Survey Plot 1, name it ‘No1 Offline Map.’ Once you’ve finished typing, tap ‘DOWNLOAD.’”</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.2.2.2.13.png" src="_images/4.2.2.2.13.png" />
+</figure>
+<ol class="arabic simple" start="7">
+<li><p>Downloading will start like as following. Please wait a moment.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.2.2.2.14.png" src="_images/4.2.2.2.14.png" />
+</figure>
+<ol class="arabic simple" start="8">
+<li><p>When the download is complete, the following dialog will appear. Then tap <code class="docutils literal notranslate"><span class="pre">ACCEPT</span></code>.</p></li>
+</ol>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/4.2.2.2.15.png"><img alt="_images/4.2.2.2.15.png" src="_images/4.2.2.2.15.png" style="width: 511.2px; height: 214.2px;" /></a>
+</figure>
+<ol class="arabic simple" start="9">
+<li><p>Tap the back button once the download finishes successfully. Otherwise, you will remain in this session after tapping <code class="docutils literal notranslate"><span class="pre">ACCEPT</span></code>.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.2.2.2.16.png" src="_images/4.2.2.2.16.png" />
+</figure>
+<ol class="arabic simple" start="10">
+<li><p>Tap the back button on the tablet several times to return to the map screen shown below. To display the offline map you created earlier, tap the area within the blue frame in the upper right corner of the screen.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.2.2.2.17.png" src="_images/4.2.2.2.17.png" />
+</figure>
+<ol class="arabic simple" start="11">
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">Switch</span> <span class="pre">map</span></code>.</p></li>
+</ol>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/4.2.2.2.18.png"><img alt="_images/4.2.2.2.18.png" src="_images/4.2.2.2.18.png" style="width: 441.59999999999997px; height: 340.8px;" /></a>
+</figure>
+<ol class="arabic simple" start="12">
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">OFFLINE</span></code> and then tap on <code class="docutils literal notranslate"><span class="pre">map</span> <span class="pre">name</span> <span class="pre">for</span> <span class="pre">the</span> <span class="pre">offline</span> <span class="pre">map</span></code> which you created earlier.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.2.2.2.19.png" src="_images/4.2.2.2.19.png" />
+</figure>
+<ol class="arabic simple" start="13">
+<li><p>The offline map will be displayed as shown below. Only the area selected as the offline map will be visible, while the area outside the offline range will not be displayed.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.2.2.2.20.png" src="_images/4.2.2.2.20.png" />
+</figure>
+</section>
+<section id="set-up-kml-file-into-oruxmaps">
+<h4>Set Up KML file into Oruxmaps<a class="headerlink" href="#set-up-kml-file-into-oruxmaps" title="Link to this heading"></a></h4>
+<p>OruxMaps can displays the points where you will conduct field surveys, but it is important to verify whether these points are within the designated monitoring area. Additionally, during the field survey, you need to confirm whether you are located inside or outside the three forest categories. Therefore, it is necessary to configure OruxMaps to display the polygon data (KML file) of the targeted forest categories.</p>
+<ol class="arabic simple">
+<li><p>Prepare the KML layer file of targeted forest category</p></li>
+<li><p>Receive the KML layer file of target forest category from PDMS Administrator via WhatsApp. Open WhatsApp and tap and hold target kmz file, then tap <code class="docutils literal notranslate"><span class="pre">total</span> <span class="pre">commander</span></code> from the pop up window.</p></li>
+</ol>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<img alt="_images/4.2.3.1.png" src="_images/4.2.3.1.png" />
+</figure>
+</td>
+<td><figure class="align-default">
+<img alt="_images/4.2.3.2.png" src="_images/4.2.3.2.png" />
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+<ol class="arabic simple" start="3">
+<li><p>Save the target kmz layer file to the Oruxmaps. Tap <code class="docutils literal notranslate"><span class="pre">internal</span> <span class="pre">storage``&lt;</span> <span class="pre">``oruxmaps</span></code> &lt;<code class="docutils literal notranslate"><span class="pre">overlay</span></code> then tap <code class="docutils literal notranslate"><span class="pre">OK</span></code>.</p></li>
+</ol>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<img alt="_images/4.2.3.3.png" src="_images/4.2.3.3.png" />
+</figure>
+</td>
+<td><figure class="align-default">
+<img alt="_images/4.2.3.4.png" src="_images/4.2.3.4.png" />
+</figure>
+</td>
+<td><figure class="align-default">
+<img alt="_images/4.2.3.5.png" src="_images/4.2.3.5.png" />
+</figure>
+</td>
+<td><figure class="align-default">
+<img alt="_images/4.2.3.6.png" src="_images/4.2.3.6.png" />
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+<ol class="arabic simple" start="4">
+<li><p>Display kmz layer file in Oruxmaps. Tap vertical ellipsis  and tap <code class="docutils literal notranslate"><span class="pre">Overlay</span> <span class="pre">options</span></code> &gt; <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">KMZ/KML/SHP</span> <span class="pre">Overlay</span> <span class="pre">``.</span> <span class="pre">Check</span> <span class="pre">the</span> <span class="pre">necessary</span> <span class="pre">kmz</span> <span class="pre">file</span> <span class="pre">and</span> <span class="pre">tap</span> <span class="pre">``OK</span></code></p></li>
+</ol>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<img alt="_images/4.2.3.7.png" src="_images/4.2.3.7.png" />
+</figure>
+</td>
+<td><figure class="align-default">
+<img alt="_images/4.2.3.8.png" src="_images/4.2.3.8.png" />
+</figure>
+</td>
+<td><figure class="align-default">
+<img alt="_images/4.2.3.9.png" src="_images/4.2.3.9.png" />
+</figure>
+</td>
+<td><figure class="align-default">
+<img alt="_images/4.2.3.10.png" src="_images/4.2.3.10.png" />
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+<ol class="arabic simple" start="5">
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">ACCEPT</span></code> then you can see the kmz layer in the Oruxmaps.</p></li>
+</ol>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<img alt="_images/4.2.3.11.png" src="_images/4.2.3.11.png" />
+</figure>
+</td>
+<td><figure class="align-default">
+<img alt="_images/4.2.3.12.png" src="_images/4.2.3.12.png" />
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+</section>
+<section id="navigate-to-deforestation-areas-oluxmap">
+<h2>Navigate to Deforestation Areas (Oluxmap)<a class="headerlink" href="#navigate-to-deforestation-areas-oluxmap" title="Link to this heading"></a></h2>
+<p>Ensure the offline map and the KML file (see Section 5.2) are set up before heading to the field survey site.</p>
+<section id="prepare-kmz-file-of-the-deforestation-area">
+<h3>Prepare KMZ file of the deforestation area<a class="headerlink" href="#prepare-kmz-file-of-the-deforestation-area" title="Link to this heading"></a></h3>
+<p>The OruxMaps application is used for navigating to the survey location. Navigation requires a KMZ file that indicates the survey area. KMZ data can be stored on each mobile device either by using an SD memory card or by downloading the KMZ file received via email or WhatsApp.”</p>
+</section>
+<section id="set-deforestation-areas-for-field-survey-via-whatsapp">
+<h3>Set Deforestation Areas for Field Survey (via WhatsApp)<a class="headerlink" href="#set-deforestation-areas-for-field-survey-via-whatsapp" title="Link to this heading"></a></h3>
+<p>To receive the KML file (geo-location information) of the survey location via WhatsApp and to display the file within Oruxmaps, follow these steps:</p>
+<p>In case of mobile device of VIVO or OPPO, open WhatsApp to see the KML file sent from PDMS Operator</p>
+<ol class="arabic simple">
+<li><p>Tap and hold the KML file</p></li>
+<li><p>Tap vertical ellipsis</p></li>
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">share</span></code></p></li>
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">Total</span> <span class="pre">Commander</span></code> icon</p></li>
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">Internal</span> <span class="pre">shared</span> <span class="pre">storage</span></code></p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.3.1.1.png" src="_images/4.3.1.1.png" />
+</figure>
+<ol class="arabic simple" start="6">
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">oruxmaps</span></code></p></li>
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">overlay</span></code></p></li>
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">OK</span></code></p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.3.1.2.png" src="_images/4.3.1.2.png" />
+</figure>
+<p>In case of mobile device of Samsung, open WhatsApp to see the KML file sent from PDMS Operator</p>
+<ol class="arabic simple">
+<li><p>Tap and hold the KML file</p></li>
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">share</span></code></p></li>
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">Total</span> <span class="pre">Commander</span></code> icon</p></li>
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">Internal</span> <span class="pre">shared</span> <span class="pre">storage</span></code></p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.3.1.3.png" src="_images/4.3.1.3.png" />
+</figure>
+<ol class="arabic simple" start="5">
+<li><p>Tap  <code class="docutils literal notranslate"><span class="pre">oruxmaps</span></code></p></li>
+<li><p>Tap  <code class="docutils literal notranslate"><span class="pre">overlay</span></code></p></li>
+<li><p>Tap  <code class="docutils literal notranslate"><span class="pre">OK</span></code></p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.3.1.4.png" src="_images/4.3.1.4.png" />
+</figure>
+</section>
+<section id="set-deforestation-areas-for-field-survey-via-gmail">
+<h3>Set Deforestation Areas for Field Survey (via Gmail)<a class="headerlink" href="#set-deforestation-areas-for-field-survey-via-gmail" title="Link to this heading"></a></h3>
+<p>To receive the KML file (geo-location information) of the survey location via Email and to display the file within Oruxmaps, follow these steps:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To receive the KML file via Email, Email address of field officer must be registered in PDMS in advance. (See XX). The field officer must also set up to receive emails in the mobile device.</p>
+</div>
+<ol class="arabic simple">
+<li><p>Open Email from PDMS Operator to see the KML file. The survey number (ID) is shown in the red frame. (In the example below, the survey number is <cite>481</cite>.) After noting or saving the survey number, tap the attached kml file indicated by the blue frame.</p></li>
+<li><p>After tapping the blue frame, the OruxMaps application will start automatically, and the following dialog will appear. To use navigation, select “Follow Route.” If you do not want to use navigation, select “No navigation.” Then, tap “ACCEPT.”</p></li>
+<li><p>The survey site is displayed in Oruxmaps</p></li>
+</ol>
+<blockquote>
+<div><table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<img alt="_images/4.3.2.1.png" src="_images/4.3.2.1.png" />
+</figure>
+</td>
+<td><figure class="align-default">
+<img alt="_images/4.3.2.2.png" src="_images/4.3.2.2.png" />
+</figure>
+</td>
+<td><figure class="align-default">
+<img alt="_images/4.3.2.3.png" src="_images/4.3.2.3.png" />
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</section>
+<section id="id1">
+<h3>Navigate to Deforestation Areas (Oluxmap)<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
+<p>The OruxMaps application guides you to the survey sites
+(1)     Tap the flag, which is positioned on the survey site (indicated below by the colored polygon).</p>
+<figure class="align-default">
+<img alt="_images/4.3.3.1.png" src="_images/4.3.3.1.png" />
+</figure>
+<ol class="arabic simple" start="2">
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">NAVIGATOR</span></code> and Select <code class="docutils literal notranslate"><span class="pre">Generic</span> <span class="pre">Navigation</span></code> and Tap <code class="docutils literal notranslate"><span class="pre">ACCEPT</span></code>.</p></li>
+</ol>
+<blockquote>
+<div><table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<img alt="_images/4.3.3.2.png" src="_images/4.3.3.2.png" />
+</figure>
+</td>
+<td><figure class="align-default">
+<img alt="_images/4.3.3.3.png" src="_images/4.3.3.3.png" />
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p>If a GPS signal has been acquired, a red line is displayed from the current location (red arrow) to the survey point. Use this navigation information to access the deforestation site.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.3.3.4.png" src="_images/4.3.3.4.png" />
+</figure>
+</section>
+</section>
+<section id="odk-collect">
+<h2>ODK Collect<a class="headerlink" href="#odk-collect" title="Link to this heading"></a></h2>
+<p>ODK Collect is a mobile application designed for efficient field data collection. It allows users to fill out surveys and forms on smartphones or tablets, capturing data such as location information and photos. The app works offline, enabling data collection in areas without internet access, and data can be uploaded to a server once an internet connection is available.</p>
+</section>
+<section id="set-up-odk-collect">
+<h2>Set Up ODK Collect<a class="headerlink" href="#set-up-odk-collect" title="Link to this heading"></a></h2>
+<section id="install-odk-collect">
+<h3>Install ODK Collect<a class="headerlink" href="#install-odk-collect" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>Access the following URL through the browser:</p></li>
+</ol>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/4.2.1.1.png"><img alt="_images/4.2.1.1.png" src="_images/4.2.1.1.png" style="width: 135.0px; height: 135.0px;" /></a>
+</figure>
+<ol class="arabic simple" start="2">
+<li><p>To download the ODK Collect application, tap the red-framed area as shown below.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.2.1.2.png" src="_images/4.2.1.2.png" />
+</figure>
+<ol class="arabic simple" start="3">
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">DOWNLOAD</span></code>.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.2.1.3.png" src="_images/4.2.1.3.png" />
+</figure>
+<ol class="arabic simple" start="4">
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">OPEN</span> <span class="pre">FILE</span></code>.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.2.1.4.png" src="_images/4.2.1.4.png" />
+</figure>
+<figure class="align-default">
+<img alt="_images/4.2.1.5.png" src="_images/4.2.1.5.png" />
+</figure>
+<ol class="arabic simple" start="5">
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">INSTALL</span></code>.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.2.1.6.png" src="_images/4.2.1.6.png" />
+</figure>
+<ol class="arabic simple" start="6">
+<li><p>Installation is complete. Tap <code class="docutils literal notranslate"><span class="pre">OPEN</span></code>.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.2.1.7.png" src="_images/4.2.1.7.png" />
+</figure>
+</section>
+<section id="manage-odk-collect-settings-picture-and-font">
+<h3>Manage ODK Collect Settings (Picture and Font)<a class="headerlink" href="#manage-odk-collect-settings-picture-and-font" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>To reduce the workload for ODK server, image size should be reduced in settings. Tap <code class="docutils literal notranslate"><span class="pre">Settings</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Form</span> <span class="pre">Management</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Image</span> <span class="pre">size</span></code> and select appropriate font size in your mobile device.</p></li>
+</ol>
+<blockquote>
+<div><table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<img alt="_images/4.4.2.1.png" src="_images/4.4.2.1.png" />
+</figure>
+</td>
+<td><figure class="align-default">
+<img alt="_images/4.4.2.2.png" src="_images/4.4.2.2.png" />
+</figure>
+</td>
+<td><figure class="align-default">
+<img alt="_images/4.4.2.3.png" src="_images/4.4.2.3.png" />
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>If you want to change the size of font in ODK collect, tap <code class="docutils literal notranslate"><span class="pre">Settings</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">User</span> <span class="pre">Interface</span></code>-&gt; <code class="docutils literal notranslate"><span class="pre">Text</span> <span class="pre">font</span> <span class="pre">size</span></code> and select appropriate font size in your mobile device</p></li>
+</ol>
+<blockquote>
+<div><table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<img alt="_images/4.4.2.4.png" src="_images/4.4.2.4.png" />
+</figure>
+</td>
+<td><figure class="align-default">
+<img alt="_images/4.4.2.5.png" src="_images/4.4.2.5.png" />
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</section>
+<section id="download-forms-from-a-sever">
+<h3>Download forms from a sever<a class="headerlink" href="#download-forms-from-a-sever" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>After opening ODK Collect, Tap the vertical ellipsis  on the top right of your screen.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.4.3.1.png" src="_images/4.4.3.1.png" />
+</figure>
+<ol class="arabic simple" start="2">
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">General</span> <span class="pre">Settings</span></code>.</p></li>
+</ol>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/4.4.3.2.png"><img alt="_images/4.4.3.2.png" src="_images/4.4.3.2.png" style="width: 372.59999999999997px; height: 240.0px;" /></a>
+</figure>
+<ol class="arabic simple" start="3">
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">SERVER</span></code> <code class="docutils literal notranslate"><span class="pre">URL</span></code>.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.4.3.3.png" src="_images/4.4.3.3.png" />
+</figure>
+<ol class="arabic simple" start="4">
+<li><p>Enter the following URL and tap <code class="docutils literal notranslate"><span class="pre">OK</span></code>:</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.4.3.4.png" src="_images/4.4.3.4.png" />
+</figure>
+<ol class="arabic simple" start="5">
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">Username</span></code>.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.4.3.5.png" src="_images/4.4.3.5.png" />
+</figure>
+<ol class="arabic simple" start="6">
+<li><p>Enter the following user name and tap <code class="docutils literal notranslate"><span class="pre">OK</span></code></p></li>
+</ol>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>user name: <strong>admin</strong></p>
+</div>
+<figure class="align-default">
+<img alt="_images/4.4.3.6.png" src="_images/4.4.3.6.png" />
+</figure>
+<ol class="arabic simple" start="7">
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">Password</span></code></p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.4.3.7.png" src="_images/4.4.3.7.png" />
+</figure>
+<ol class="arabic simple" start="8">
+<li><p>Enter the following information as the password and tap <code class="docutils literal notranslate"><span class="pre">OK</span></code></p></li>
+</ol>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>passward: <strong>icr2222</strong></p>
+</div>
+<figure class="align-default">
+<img alt="_images/4.4.3.8.png" src="_images/4.4.3.8.png" />
+</figure>
+<ol class="arabic simple" start="9">
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">User</span> <span class="pre">interface</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">Basemap</span></code>.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.4.3.9.png" src="_images/4.4.3.9.png" />
+</figure>
+<ol class="arabic simple" start="10">
+<li><p>Select <code class="docutils literal notranslate"><span class="pre">Hybrid</span></code>.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.4.3.10.png" src="_images/4.4.3.10.png" />
+</figure>
+<ol class="arabic simple" start="11">
+<li><p>Press the <code class="docutils literal notranslate"><span class="pre">Return</span></code> button on the tablet to return to the menu screen.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.4.3.11.png" src="_images/4.4.3.11.png" />
+</figure>
+<ol class="arabic simple" start="12">
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">Get</span> <span class="pre">Blank</span> <span class="pre">Form</span></code>.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.4.3.12.png" src="_images/4.4.3.12.png" />
+</figure>
+<ol class="arabic simple" start="13">
+<li><p>Download the survey forms prepared for each province. Select and check the blank form of your target province within the blue frame, then tap <code class="docutils literal notranslate"><span class="pre">Get</span> <span class="pre">Selected.</span></code>.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.4.3.13.png" src="_images/4.4.3.13.png" />
+</figure>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p>Form Name</p></td>
+<td><p>Provincial Name</p></td>
+</tr>
+<tr class="row-even"><td><p>PDMS_ATP2</p></td>
+<td><p>Attapeu province</p></td>
+</tr>
+<tr class="row-odd"><td><p>PDMS_BKO2</p></td>
+<td><p>Bokeo province</p></td>
+</tr>
+<tr class="row-even"><td><p>PDMS_BKX2</p></td>
+<td><p>Bolikhamxay province</p></td>
+</tr>
+<tr class="row-odd"><td><p>PDMS_CSK2</p></td>
+<td><p>Champasak province</p></td>
+</tr>
+<tr class="row-even"><td><p>PDMS_HPN2</p></td>
+<td><p>Houaphanh province</p></td>
+</tr>
+<tr class="row-odd"><td><p>PDMS_KMN2</p></td>
+<td><p>Khammuane province</p></td>
+</tr>
+<tr class="row-even"><td><p>PDMS_LNT2</p></td>
+<td><p>Luangnamtha province</p></td>
+</tr>
+<tr class="row-odd"><td><p>PDMS_LPB2</p></td>
+<td><p>Luangprabang province</p></td>
+</tr>
+<tr class="row-even"><td><p>PDMS_ODX2</p></td>
+<td><p>Oudomxay province</p></td>
+</tr>
+<tr class="row-odd"><td><p>PDMS_PSL2</p></td>
+<td><p>Phongsaly province</p></td>
+</tr>
+<tr class="row-even"><td><p>PDMS_SLV2</p></td>
+<td><p>Saravane province</p></td>
+</tr>
+<tr class="row-odd"><td><p>PDMS_SYB2</p></td>
+<td><p>Xayaboury province</p></td>
+</tr>
+<tr class="row-even"><td><p>PDMS_VTC2</p></td>
+<td><p>Vientiane Capital</p></td>
+</tr>
+<tr class="row-odd"><td><p>PDMS_VTE2</p></td>
+<td><p>Vientiane province</p></td>
+</tr>
+<tr class="row-even"><td><p>PDMS_XSB2</p></td>
+<td><p>Xaysombun province</p></td>
+</tr>
+<tr class="row-odd"><td><p>PDMS_XKG2</p></td>
+<td><p>Xiengkuang province</p></td>
+</tr>
+<tr class="row-even"><td><p>PDMS_XEK2</p></td>
+<td><p>Sekong province</p></td>
+</tr>
+</tbody>
+</table>
+<ol class="arabic simple" start="14">
+<li><p>If <strong>All downloads succeeded</strong> is displayed in the dialog, the blank survey form has been successfully received from the server</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.4.3.14.png" src="_images/4.4.3.14.png" />
+</figure>
+</section>
+</section>
+<section id="use-odk-collect">
+<h2>Use ODK Collect<a class="headerlink" href="#use-odk-collect" title="Link to this heading"></a></h2>
+<section id="confirm-id-number-requested-by-pdms-operator">
+<h3>Confirm ID Number Requested by PDMS Operator<a class="headerlink" href="#confirm-id-number-requested-by-pdms-operator" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>Each KML data file representing a survey location is assigned a unique number (ID). This ID number is required for use in ODK Collect. If you have forgotten or do not have ID number of the survey location, tap the flag indicating the survey location in the OruxMaps application, and the following figure will be displayed. The ID number is shown in the red frame. In the example below, the ID number is <code class="docutils literal notranslate"><span class="pre">no_2.kml</span></code>. However, when using ODK Collect, only the number <code class="docutils literal notranslate"><span class="pre">2</span></code> is required, not <code class="docutils literal notranslate"><span class="pre">2.kml</span></code> (see sections 5.5.2 for details).</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.5.1.1.png" src="_images/4.5.1.1.png" />
+</figure>
+</section>
+<section id="fill-out-forms">
+<h3>Fill out Forms<a class="headerlink" href="#fill-out-forms" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>Select <code class="docutils literal notranslate"><span class="pre">Start</span> <span class="pre">new</span> <span class="pre">form</span></code> from the Main Menu. You will see a list of blank forms available on the device. Tap one form of your province to open it and start filling it out.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.5.1.2.png" src="_images/4.5.1.2.png" />
+</figure>
+<figure class="align-default">
+<a class="reference internal image-reference" href="_images/4.5.1.3.png"><img alt="_images/4.5.1.3.png" src="_images/4.5.1.3.png" style="width: 300.0px; height: 744.9px;" /></a>
+</figure>
+<ol class="arabic simple" start="2">
+<li><p>First, select whether to enter the ID number of survey location.</p></li>
+</ol>
+<ul class="simple">
+<li><p>If you have received the ID number of survey location in advance from the PDMS Operator (PAFO), select <code class="docutils literal notranslate"><span class="pre">Plot</span> <span class="pre">ID</span> <span class="pre">allocated</span></code> in the red frame.</p></li>
+<li><p>If the Field Officer will conduct the field survey without direction from the PDMS Operator (e.g., if the Field Officer finds a deforestation area in the field), select <code class="docutils literal notranslate"><span class="pre">Not</span> <span class="pre">Plot</span> <span class="pre">ID</span> <span class="pre">allocated</span></code> in the blue frame.</p></li>
+</ul>
+<figure class="align-default">
+<img alt="_images/4.5.1.4.png" src="_images/4.5.1.4.png" />
+</figure>
+<ol class="arabic simple" start="3">
+<li><p>Go to the next screen by swiping to the left. If you selected <code class="docutils literal notranslate"><span class="pre">Plot</span> <span class="pre">ID</span> <span class="pre">allocated</span></code> on the previous screen, enter the ID number in this question highlighted in red box. (If you selected <code class="docutils literal notranslate"><span class="pre">Not</span> <span class="pre">Plot</span> <span class="pre">ID</span> <span class="pre">allocated</span></code> on the previous screen, this question will not appear.)</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.5.1.5.png" src="_images/4.5.1.5.png" />
+</figure>
+<p>(4)     After fill in the question on the screen, swipe the screen to the left.
+(You can swipe anywhere you like)</p>
+<figure class="align-default">
+<img alt="_images/4.5.1.6.png" src="_images/4.5.1.6.png" />
+</figure>
+</section>
+<section id="measurement-of-deforestation-area">
+<h3>Measurement of Deforestation Area<a class="headerlink" href="#measurement-of-deforestation-area" title="Link to this heading"></a></h3>
+<p>ODK Collect enables the measurement of deforestation areas using the GPS function of a mobile device. In the question titled <code class="docutils literal notranslate"><span class="pre">Measurement</span> <span class="pre">of</span> <span class="pre">Deforestation</span> <span class="pre">Area,</span></code> you are presented with two options: <strong>Field Measurement</strong> or <strong>Measurement using drone or satellite image</strong>.</p>
+<p><strong>Field Measurement</strong>
+(1)     Select <code class="docutils literal notranslate"><span class="pre">Field</span> <span class="pre">Measurement</span></code> and move to the next screen, and tap <code class="docutils literal notranslate"><span class="pre">Get</span> <span class="pre">polygon</span></code> red frame below.</p>
+<blockquote>
+<div><table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<img alt="_images/4.5.2.1.png" src="_images/4.5.2.1.png" />
+</figure>
+</td>
+<td><figure class="align-default">
+<img alt="_images/4.5.2.2.png" src="_images/4.5.2.2.png" />
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>If you have already reached the deforestation area to be measured, you can view a map of your surrounding area on your mobile device. Tap flag icon highlighted in red frame and select <code class="docutils literal notranslate"><span class="pre">Manual</span> <span class="pre">location</span> <span class="pre">recording</span></code> in the box <code class="docutils literal notranslate"><span class="pre">Input</span> <span class="pre">method</span></code>, then tap <code class="docutils literal notranslate"><span class="pre">start</span></code></p></li>
+</ol>
+<blockquote>
+<div><table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<img alt="_images/4.5.2.3.png" src="_images/4.5.2.3.png" />
+</figure>
+</td>
+<td><figure class="align-default">
+<img alt="_images/4.5.2.4.png" src="_images/4.5.2.4.png" />
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p>Walk along the deforestation area in the field and tap <code class="docutils literal notranslate"><span class="pre">Record</span> <span class="pre">a</span> <span class="pre">point</span></code> at each corner. The GPS information from the mobile device will then create a polygon representing the deforested area on the map, as shown below.</p></li>
+<li><p>After completing the walk around the deforestation area and tap <code class="docutils literal notranslate"><span class="pre">Record</span> <span class="pre">a</span> <span class="pre">point</span></code> at each corner, tap the icon highlighted in red. The recorded GPS coordinates will be displayed. If you tap “Next,” the area you have covered will be shown and automatically entered into the form.</p></li>
+</ol>
+<blockquote>
+<div><table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<img alt="_images/4.5.2.5.png" src="_images/4.5.2.5.png" />
+</figure>
+</td>
+<td><figure class="align-default">
+<img alt="_images/4.5.2.6.png" src="_images/4.5.2.6.png" />
+</figure>
+</td>
+<td><figure class="align-default">
+<img alt="_images/4.5.2.7.png" src="_images/4.5.2.7.png" />
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<p><strong>Measurement using drone or satellite image</strong>
+(5)     Select <code class="docutils literal notranslate"><span class="pre">Measurement</span> <span class="pre">using</span> <span class="pre">drone</span> <span class="pre">or</span> <span class="pre">satellite</span> <span class="pre">image</span></code> and move to the next screen., Here, you will manually enter the area of deforestation based on the results of measurements using aerial photographs taken by drone or satellite images, or on visual estimates by field observation.</p>
+<blockquote>
+<div><table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<img alt="_images/4.5.2.8.png" src="_images/4.5.2.8.png" />
+</figure>
+</td>
+<td><figure class="align-default">
+<img alt="_images/4.5.2.9.png" src="_images/4.5.2.9.png" />
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</section>
+<section id="geo-point-location-of-deforestation-area">
+<h3>Geo-point (Location) of Deforestation Area<a class="headerlink" href="#geo-point-location-of-deforestation-area" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>Tap <code class="docutils literal notranslate"><span class="pre">Get</span> <span class="pre">Point</span></code> then you can see the map in your location when you specify the geo-location by holding down on the point, a balloon will appear. Tap the area highlighted in red frame to save your current geo-location.</p></li>
+</ol>
+<blockquote>
+<div><table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<img alt="_images/4.5.2.10.png" src="_images/4.5.2.10.png" />
+</figure>
+</td>
+<td><figure class="align-default">
+<img alt="_images/4.5.2.11.png" src="_images/4.5.2.11.png" />
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>Latitude and longtitude, and attribute data can be saved.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/4.5.2.12.png" src="_images/4.5.2.12.png" />
+</figure>
+</section>
+<section id="picture-of-deforestation-area">
+<h3>Picture of Deforestation Area<a class="headerlink" href="#picture-of-deforestation-area" title="Link to this heading"></a></h3>
+<p>Tap “Take Photo” (red frame) to activate the camera and take a picture. Tap “Choose Image” (blue frame) to select an image saved on the tablet.</p>
+<figure class="align-default">
+<img alt="_images/4.5.5.1.png" src="_images/4.5.5.1.png" />
+</figure>
+</section>
+<section id="forms-end-screen">
+<h3>Forms End Screen<a class="headerlink" href="#forms-end-screen" title="Link to this heading"></a></h3>
+<p>Forms end with a standard screen that displays the name of the filled form and options to save as draft or indicate that the form is ready to send.</p>
+<figure class="align-default">
+<img alt="_images/4.5.6.1.png" src="_images/4.5.6.1.png" />
+</figure>
+<ul class="simple">
+<li><p>If you tap the <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">as</span> <span class="pre">draft</span></code> button, the form will be saved and available for more editing from the <code class="docutils literal notranslate"><span class="pre">Drafts</span></code> screen.</p></li>
+<li><p>If you tap on the <code class="docutils literal notranslate"><span class="pre">Finalize</span></code> button marks the form as Finalized which makes it available from the <code class="docutils literal notranslate"><span class="pre">Ready</span> <span class="pre">to</span> <span class="pre">send</span></code> screen and prevents further editing.</p></li>
+</ul>
+</section>
+<section id="edit-drafts">
+<h3>Edit Drafts<a class="headerlink" href="#edit-drafts" title="Link to this heading"></a></h3>
+<p>When filling out a form, you can save it as a draft and edit it later.</p>
+<blockquote>
+<div><table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<img alt="_images/4.5.7.1.png" src="_images/4.5.7.1.png" />
+</figure>
+</td>
+<td><figure class="align-default">
+<img alt="_images/4.5.7.2.png" src="_images/4.5.7.2.png" />
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</section>
+<section id="send-finalized-forms">
+<h3>Send Finalized Forms<a class="headerlink" href="#send-finalized-forms" title="Link to this heading"></a></h3>
+<p>You will find finalized forms in the <code class="docutils literal notranslate"><span class="pre">Ready</span> <span class="pre">to</span> <span class="pre">send</span></code> list, displayed by the name that the form definition specifies. When there are forms that are ready to send, you will see a blue notification badge on the <code class="docutils literal notranslate"><span class="pre">Ready</span> <span class="pre">to</span> <span class="pre">send</span></code> button and its title will become bold.
+Check the form checkbox on the right side and tap the <code class="docutils literal notranslate"><span class="pre">Send</span> <span class="pre">selected</span></code> button. After a short time, the <code class="docutils literal notranslate"><span class="pre">Upload</span> <span class="pre">Results</span></code> box will appear, displaying the file name and <code class="docutils literal notranslate"><span class="pre">Success</span></code> if it was successfully sent to the server.</p>
+<blockquote>
+<div><table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><figure class="align-default">
+<img alt="_images/4.5.8.1.png" src="_images/4.5.8.1.png" />
+</figure>
+</td>
+<td><figure class="align-default">
+<img alt="_images/4.5.8.2.png" src="_images/4.5.8.2.png" />
+</figure>
+</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</section>
+</section>
+<section id="pdms-web-application">
+<h2>PDMS Web Application<a class="headerlink" href="#pdms-web-application" title="Link to this heading"></a></h2>
+</section>
+<section id="final-review-of-the-result-of-field-survey">
+<h2>Final Review of the Result of Field Survey<a class="headerlink" href="#final-review-of-the-result-of-field-survey" title="Link to this heading"></a></h2>
+<p>Once the field survey is completed and the results are sent to the server, the PDMS operator will carry out a final review of the survey results. If any deficiencies are found, the Field Officer may be requested to conduct a re-survey.</p>
+<figure class="align-default">
+<img alt="_images/4.6.1.png" src="_images/4.6.1.png" />
+</figure>
+<ol class="arabic simple">
+<li><p>Click <code class="docutils literal notranslate"><span class="pre">Monitoring</span> <span class="pre">Plot</span></code> box</p></li>
+<li><p>Select <code class="docutils literal notranslate"><span class="pre">Completed</span> <span class="pre">(finish</span> <span class="pre">field</span> <span class="pre">investigation)</span></code> in the Display options box. You can see only the surveyed plots of <em>Completed (finish field investigation)</em> in the map.</p></li>
+<li><p>Select the survey plots that you want to review and double-click the survey plot.</p></li>
+<li><p>After review the result of fiel survey,</p></li>
+</ol>
+<ul class="simple">
+<li><p>If no resurvey is required, click <code class="docutils literal notranslate"><span class="pre">Do</span> <span class="pre">not</span> <span class="pre">conduct</span> <span class="pre">re-servey</span></code> to complete the survey.</p></li>
+<li><p>If a re-investigation is needed, click <code class="docutils literal notranslate"><span class="pre">Conduct</span> <span class="pre">re-servey</span></code> to request a re-investigation.</p></li>
+</ul>
+<figure class="align-default">
+<img alt="_images/4.6.2.png" src="_images/4.6.2.png" />
+</figure>
+<p>If you click <code class="docutils literal notranslate"><span class="pre">Do</span> <span class="pre">not</span> <span class="pre">conduct</span> <span class="pre">re-servey</span></code> and return to the previous screen,
+the process column will be updated from <em>Completed (finish field investigation)</em> to <em>Completed (including field investigation)</em>, indicating that you have reviewed and accepted the result by PDMS Operator.</p>
+<figure class="align-default">
+<img alt="_images/4.6.3.png" src="_images/4.6.3.png" />
+</figure>
+</section>
+<section id="delete-data">
+<h2>Delete Data<a class="headerlink" href="#delete-data" title="Link to this heading"></a></h2>
+<p>(1)     When you select <code class="docutils literal notranslate"><span class="pre">Plot</span> <span class="pre">List</span></code> then click a row, or select <code class="docutils literal notranslate"><span class="pre">Map</span></code> then click a survey site on the map, the survey results will be displayed.
+You can delete this survey location by clicking <code class="docutils literal notranslate"><span class="pre">Delete</span> <span class="pre">Data</span></code>.</p>
+<figure class="align-default">
+<img alt="_images/4.7.1.png" src="_images/4.7.1.png" />
+</figure>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="5_desk_assess.html" class="btn btn-neutral float-left" title="Desk-based Assessment of Deforestation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="7_reporting.html" class="btn btn-neutral float-right" title="Reporting and Dashboard" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, The Project for Enhancing Sustainable Forest Management in collaboration with REDD+ programs and REDD+ funds(F-REDD2), JICA.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

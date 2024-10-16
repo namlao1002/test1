@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desk-based Assessment of Deforestation &mdash; Operation Manual PDMS 08 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=0548be17"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="_static/custom.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Field Monitoring" href="6_field_monitoring.html" />
+    <link rel="prev" title="Get Started with PDMS" href="4_start.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Operation Manual PDMS
+              <img src="_static/logo_maf.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="2_overview.html">PDMS Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3_ui.html">PDMS User Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_start.html">Get Started with PDMS</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Desk-based Assessment of Deforestation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#deforestation-alert-and-satellite-imagery">Deforestation Alert and Satellite Imagery</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#sentinel-2">Sentinel-2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nicfi-planet-level-1">NICFI Planet (Level 1)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#verify-deforestation-area">Verify Deforestation Area</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#register-deforestation-area-for-field-survey">Register Deforestation Area for Field Survey</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="6_field_monitoring.html">Field Monitoring</a></li>
+<li class="toctree-l1"><a class="reference internal" href="7_reporting.html">Reporting and Dashboard</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Operation Manual PDMS</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Desk-based Assessment of Deforestation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/5_desk_assess.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="desk-based-assessment-of-deforestation">
+<h1>Desk-based Assessment of Deforestation<a class="headerlink" href="#desk-based-assessment-of-deforestation" title="Link to this heading"></a></h1>
+<p>In this section, the deforestation area is verified through visual interpretation, using deforestation alerts and the most recent satellite imagery as references. After verification, the location data of the confirmed deforestation area is sent to the local representative for field survey.</p>
+<section id="deforestation-alert-and-satellite-imagery">
+<h2>Deforestation Alert and Satellite Imagery<a class="headerlink" href="#deforestation-alert-and-satellite-imagery" title="Link to this heading"></a></h2>
+<p>PDMS uses the Google earth engine and GEE Data Downloader to distribute Deforestation Alerts to each province once a week. Simultaneously, it also delivers composite images from Sentinel-2 (<a class="reference external" href="https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S2_SR_HARMONIZED">https://developers.google.com/earth-engine/datasets/catalog/COPERNICUS_S2_SR_HARMONIZED</a>) taken over the last month, as well as Sentinel-2 images taken in the previous week. This allows for a cross-check by visually comparing the forest cover conditions of the previous month with those of the last week to verify if deforestation is actually occurring, based on the Deforestation Alerts.</p>
+<p>Since Sentinel-2 is an optical satellite image, it has some limitations, such as difficulties in observing the forest cover due to cloud, haze, and moist in mountainous areas, especially during the rainy season. Therefore, in addition to Sentinel-2 images, PDMS also automatically distribute monthly mosaics of higher resolution images of the NICFI Satellite Data Program Basemaps (<a class="reference external" href="https://developers.google.com/earth-engine/datasets/catalog/projects_planet-nicfi_assets_basemaps_asia">https://developers.google.com/earth-engine/datasets/catalog/projects_planet-nicfi_assets_basemaps_asia</a> ) once a month. This also delivers images from last month and the current month, respectively. By comparing these high-resolution images with less cloud cover, it is possible to examine forest conditions in greater detail</p>
+<p>The differences between Sentinel2 and NICFI Planet images are explained below.</p>
+<section id="sentinel-2">
+<h3>Sentinel-2<a class="headerlink" href="#sentinel-2" title="Link to this heading"></a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>Lower Resolution (10 m)</p></li>
+<li><p>Every 5 days (almost Weekly)</p></li>
+<li><p>The frequency of shooting is higher and Sentinel 2 is used for weekly forest change detection in PDMS.</p></li>
+<li><p>On the other hand, images are often unclear due to lower resolution, clouds and haze.</p></li>
+</ul>
+</div></blockquote>
+<figure class="align-default" id="id1">
+<img alt="Alternate Text" src="_images/3.1.1.png" />
+<figcaption>
+<p><span class="caption-text">Sentinel-2</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="nicfi-planet-level-1">
+<h3>NICFI Planet (Level 1)<a class="headerlink" href="#nicfi-planet-level-1" title="Link to this heading"></a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>Higher Resolution (4.77 m)</p></li>
+<li><p>Every Month (level1)</p></li>
+<li><p>Tend to get a clear image because the Planet image are composited from multiple images taken within a month.</p></li>
+<li><p>However, the frequency of shooting is not high (one month).</p></li>
+<li><p>It is useful for verification of deforestation area detected by PDMS.</p></li>
+</ul>
+</div></blockquote>
+<figure class="align-default" id="id2">
+<img alt="Alternate Text" src="_images/3.1.2.png" />
+<figcaption>
+<p><span class="caption-text">NICFI Planet (Level 1)</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Here is an example from Savannakhet Province. When you click on the [Map] tab in the PDMS Web application, you can confirm that Deforestation Alerts and Sentinel-2 images are being automatically delivered on a weekly basis. The image from the previous month is displayed on the left side, and the most recent image is displayed on the right side.</p>
+<figure class="align-default">
+<img alt="_images/3.1.3.png" src="_images/3.1.3.png" />
+</figure>
+<p>Click on “Satellite Image” from the right-side menu bar, and select “NICFI image.” This will change the background image to the Monthly NICFI Planet image.</p>
+<figure class="align-default">
+<img alt="_images/3.1.4.png" src="_images/3.1.4.png" />
+</figure>
+</section>
+</section>
+<section id="verify-deforestation-area">
+<h2>Verify Deforestation Area<a class="headerlink" href="#verify-deforestation-area" title="Link to this heading"></a></h2>
+<p>The Deforestation Alert indicates the likelihood of deforestation, but there is an uncertainty in the result due to misinterpretation of satellite imagery caused by the clouds, haze and leaf-fall. The PDMS Web application helps to verify deforestation areas by using Deforestation Alert and satellite imagery.</p>
+<p>Additionally, while the Deforestation Alert covers the entire province, it is not feasible to monitor all deforestation areas within a province due to human and budgetary constraints at the provincial and district levels. Therefore, it is important to first identify the key monitoring areas (e.g., national parks, conservation areas, or village conservation and protection forests) in collaboration with stakeholders. After identifying these target areas, upload the GIS data (KMZ file) of the monitoring target area to the PDMS Web application to monitor deforestation within these areas.</p>
+<ol class="arabic simple">
+<li><p>Zoom in to the target monitoring area.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/3.2.0.png" src="_images/3.2.0.png" />
+</figure>
+<ol class="arabic simple" start="2">
+<li><p>Confirm whether the Deforestation Alert is occurring within the target monitoring area.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/3.2.1.png" src="_images/3.2.1.png" />
+</figure>
+<ol class="arabic simple" start="3">
+<li><p>Use the Deforestation Alert toggle and slider controls to verify whether deforestation has occurred.</p></li>
+</ol>
+<p><strong>Turn off kmz layer file of target monitoring area (Basemap-&gt;target area)</strong></p>
+<figure class="align-default">
+<img alt="_images/3.2.2.png" src="_images/3.2.2.png" />
+</figure>
+<p><strong>Turn off Deforestation Alert (Monitoring Plot-&gt;Monitoring Plot)</strong></p>
+<p><em>Before: Satellite image (last month)</em></p>
+<figure class="align-default">
+<img alt="_images/3.2.3.png" src="_images/3.2.3.png" />
+</figure>
+<p><em>After: latest satellite image (last week)</em></p>
+<figure class="align-default">
+<img alt="_images/3.2.4.png" src="_images/3.2.4.png" />
+</figure>
+<p>The circled areas are the deforestation areas resulting from the desk assessment.</p>
+<figure class="align-default">
+<img alt="_images/3.2.5.png" src="_images/3.2.5.png" />
+</figure>
+</section>
+<section id="register-deforestation-area-for-field-survey">
+<h2>Register Deforestation Area for Field Survey<a class="headerlink" href="#register-deforestation-area-for-field-survey" title="Link to this heading"></a></h2>
+<p>Survey sites are identified based on the deforestation alert processed by Google Earth Engine .</p>
+<ol class="arabic simple">
+<li><p>Click on <code class="docutils literal notranslate"><span class="pre">polygon</span></code> icon that appears to the right of <code class="docutils literal notranslate"><span class="pre">hand</span></code> icon. Select this icon to identify the deforestation area to be surveyed. The <code class="docutils literal notranslate"><span class="pre">hand</span></code> icon is also used to move the satellite image up, down, left or right.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/3.3.0.png" src="_images/3.3.0.png" />
+</figure>
+<ol class="arabic simple" start="2">
+<li><p>The deforestation alert processed by GEE is shown in the figure below. Using satellite imagery (Sentinel 2, NICFI Planet) as a reference image, the deforestation alert needs to verify whether deforestation is indeed occurring, before selecting the area to be surveyed.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/3.3.1.png" src="_images/3.3.1.png" />
+</figure>
+<ol class="arabic simple" start="3">
+<li><p>Click on each corner along the boundary of the deforestation area, and double-click the last point to create and register the polygon.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/3.3.2.png" src="_images/3.3.2.png" />
+</figure>
+<ol class="arabic simple" start="4">
+<li><p>After defining the polygon, new screen automatically appears showing the plot number, area and data source as follows.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/3.3.3.png" src="_images/3.3.3.png" />
+</figure>
+<p>You will select the following data source.</p>
+<ol class="upperalpha simple">
+<li><p>Select survey sites based on GEE analysis results.</p></li>
+<li><p>Select survey sites based on the request of the site.</p></li>
+</ol>
+<ol class="arabic simple" start="5">
+<li><p>After selecting the data source, click <code class="docutils literal notranslate"><span class="pre">Registration</span></code> to register the survey site in the database. If you click <code class="docutils literal notranslate"><span class="pre">Cancel</span></code> before clicking <code class="docutils literal notranslate"><span class="pre">Registration</span></code>, you will return to the previous screen without registration.</p></li>
+</ol>
+<p>A pin icon is displayed on the map screen at the registered location.</p>
+<figure class="align-default">
+<img alt="_images/3.3.4.png" src="_images/3.3.4.png" />
+</figure>
+<ol class="arabic simple" start="6">
+<li><p>Click the [Plot Data] tab to display a list of survey sites. You can see the registered site in the list here.</p></li>
+</ol>
+<figure class="align-default">
+<img alt="_images/3.3.5.png" src="_images/3.3.5.png" />
+</figure>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="4_start.html" class="btn btn-neutral float-left" title="Get Started with PDMS" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="6_field_monitoring.html" class="btn btn-neutral float-right" title="Field Monitoring" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, The Project for Enhancing Sustainable Forest Management in collaboration with REDD+ programs and REDD+ funds(F-REDD2), JICA.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
